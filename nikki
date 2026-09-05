@@ -97,10 +97,7 @@ config nameserver
 config nameserver
 	option 'enabled' '1'
 	option 'type' 'direct-nameserver'
-	list 'nameserver' 'https://223.5.5.5/dns-query'
-	list 'nameserver' 'https://223.6.6.6/dns-query'
-	list 'nameserver' 'https://1.12.12.12/dns-query'
-	list 'nameserver' 'https://120.53.53.53/dns-query'
+	list 'nameserver' 'system'
 
 config nameserver
 	option 'enabled' '1'
