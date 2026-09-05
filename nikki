@@ -54,7 +54,7 @@ config mixin 'mixin'
 	option 'dns_ipv6' '0'
 	option 'dns_mode' 'fake-ip'
 	option 'fake_ip_range' '198.18.0.1/16'
-	option 'fake_ip6_range' 'fdfe:dcba:9876::1/64'
+#	option 'fake_ip6_range' 'fdfe:dcba:9876::1/64'
 	option 'fake_ip_filter' '1'
 	list 'fake_ip_filters' 'rule-set:fakeip-filter'
 	list 'fake_ip_filters' 'rule-set:private'
@@ -91,21 +91,13 @@ config authentication
 
 config nameserver
 	option 'enabled' '1'
-	option 'type' 'default-nameserver'
-	list 'nameserver' 'system'
-
-config nameserver
-	option 'enabled' '1'
 	option 'type' 'direct-nameserver'
 	list 'nameserver' 'system'
 
 config nameserver
 	option 'enabled' '1'
 	option 'type' 'nameserver'
-	list 'nameserver' 'https://223.5.5.5/dns-query'
-	list 'nameserver' 'https://223.6.6.6/dns-query'
-	list 'nameserver' 'https://1.12.12.12/dns-query'
-	list 'nameserver' 'https://120.53.53.53/dns-query'
+	list 'nameserver' 'system'
 
 config nameserver_policy
 	option 'enabled' '1'
