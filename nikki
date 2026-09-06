@@ -90,11 +90,6 @@ config authentication
 
 config nameserver
 	option 'enabled' '1'
-	option 'type' 'direct-nameserver'
-	list 'nameserver' 'system'
-
-config nameserver
-	option 'enabled' '1'
 	option 'type' 'nameserver'
 	list 'nameserver' 'system'
 
